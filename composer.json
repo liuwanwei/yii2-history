@@ -3,7 +3,7 @@
 	"type": "yii2-extension",
 	"description": "Simple user login history views, use `afterLogin` event to record every user login.",
 	"homepage": "https://github.com/liuwanwei/yii2-history",
-	"license": "Apache Version 2.0",
+	"license": "Apache-2.0",
 	"authors": [
 		{
 			"name": "liuwanwei",
