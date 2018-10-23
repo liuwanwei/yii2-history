@@ -1,0 +1,25 @@
+{
+	"name": "buddysoft/yii2-history",
+	"type": "yii2-extension",
+	"description": "Simple user login history views, use `afterLogin` event to record every user login.",
+	"homepage": "https://github.com/liuwanwei/yii2-history",
+	"license": "Apache Version 2.0",
+	"authors": [
+		{
+			"name": "liuwanwei",
+			"email": "liuwanwei@gmail.com",
+			"homepage": "https://weibo.com/iHarbor",
+			"role": "developer"
+		}
+	],
+	"require": {
+		"php": ">=5.6.15",
+		"yiisoft/yii2": "~2.0.7",
+		"buddysoft/yii2-widget": "~2.0.1"
+	},
+	"autoload": {
+	    "psr-4": {
+	        "buddysoft\\history\\": ""
+	    }
+	}
+}
