@@ -40,6 +40,7 @@ class LoginController extends WebController
 
         return $this->render('index', [
             'dataProvider' => $dataProvider,
+            'searchModel' => $searchModel,
         ]);
     }
 
