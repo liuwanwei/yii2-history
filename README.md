@@ -49,5 +49,22 @@
 ### 4.注册 afterLogin 事件
 
 ```
+'components' => [
+    'user' => [
+        'identityClass' => 'common\models\User',
+        'loginUrl' => ['admin/user/login'],
+        'returnUrl' => ['line/index'],        
+        'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
 
+        /**
+         * 管家配置从这里开始
+         */
+
+        // 关闭自动登录，设置登录有效期为 1 天
+        'enableAutoLogin' => false,
+        'authTimeout' => '86400',   // 一天登录时效
+        // 配置登录事件处理
+        'on afterLogin' => ['buddysoft\history\handlers\LoginHandler', 'afterLogin'],
+    ],
+]
 ```
