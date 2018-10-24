@@ -42,9 +42,17 @@
 
 经过以上配置，就能在浏览中访问配置界面了:
 
->http://localhost/login/login/index
+>http://localhost/history/login/index
 
-跟 Yii2-admin 配合使用时，记得将 login/login/* 访问权限添加给管理员用户。
+跟 Yii2-admin 配合使用时，记得将访问权限添加给管理员用户，或者在测试时加入以下代码。
+
+```
+'as access' => [
+    'class' => 'mdm\admin\components\AccessControl',
+    'allowActions' => [
+        'history/*',        // 只有这一行是专有内容
+    ],
+```
 
 ### 4.注册 afterLogin 事件
 
